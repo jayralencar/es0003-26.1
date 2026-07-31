@@ -14,3 +14,9 @@ def cadastrar():
     # "r" = read (apenas lê o arquivo)
     f.write(f"{nome},{email},{senha}\n") # escreve no arquivo
     f.close() # fecha o arquivo
+
+def listar():
+    f = open("usuarios.txt", "r") # lê o arquivo
+
+    for linha in f.readlines(): # percorre cada linha do arquivo
+        print(linha) # mostra a linha na tela
